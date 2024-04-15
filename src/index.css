@@ -65,6 +65,9 @@ p {
     align-items: center;
 
 }
+.menu{
+    margin-bottom: 80px;
+}
 .header .main-icon img{
     width: 50px;
     height: 50px;
@@ -179,10 +182,9 @@ p {
   }
   .pay-page{
     width: 100%;
-    min-height: 100%;
+    
     min-width: 90vw;
     margin: 0 auto;
-  
     display: grid;
     gap: 3rem 2rem;
     justify-items: center;
@@ -206,13 +208,13 @@ p {
   .pay-page-body{
     width: 300px;
     min-height: 100%;
+margin-bottom: 90px;
     display: flex;
     flex-direction: column;
   }
 .pay-page-footer{
-  
-
-
+    position: fixed;
+    height: 80px;
     bottom: 0;
     width: 100%;
  
@@ -232,6 +234,7 @@ margin-bottom: 10px;
     font-weight: bold;
 }
 .pay-page-footer button{
+ 
 
 
     grid-area: btn;

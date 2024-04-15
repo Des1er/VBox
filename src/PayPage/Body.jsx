@@ -7,6 +7,7 @@ function Body(){
     const data = useSelector(state =>state.jsonData) 
     return(
         <div className="pay-page-body">
+            <h2 className='category_name'>Ваша корзина</h2>
            {data.map((category, categoryIndex) => (
                 <div key={categoryIndex}>
                     {category.items.map((item, itemIndex) => {
