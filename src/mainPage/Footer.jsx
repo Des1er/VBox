@@ -7,7 +7,7 @@ function Footer(props ){
 
     return(
         <div className="footer">
-            <button onClick={props.redirectToOtherPage}>{totalNum} за {bill}</button>
+            <button onClick={props.redirectToOtherPage}>{totalNum} за {Number(bill).toFixed(2)}$</button>
         </div>
 
     )

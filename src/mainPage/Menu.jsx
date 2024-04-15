@@ -7,8 +7,8 @@ function Menu(){
     const data = useSelector(state =>state.jsonData) 
 
     return (<div className="menu">
-        {data.map((category,categoryIndex)=>(<div key={categoryIndex}>
-            <h1 className='category_name'>{category.type}</h1>
+        {data.map((category,categoryIndex)=>(<div key={categoryIndex} className="category">
+            <h2 className='category_name'>{category.type}</h2>
             {category.items.map((item, itemIndex)=>(
                 (<MenuItem key = {itemIndex} 
                 item={item}

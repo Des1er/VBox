@@ -6,7 +6,7 @@ import MenuItem from "../mainPage/menu/Menu-Item";
 function Body(){
     const data = useSelector(state =>state.jsonData) 
     return(
-        <div >
+        <div className="pay-page-body">
            {data.map((category, categoryIndex) => (
                 <div key={categoryIndex}>
                     {category.items.map((item, itemIndex) => {
